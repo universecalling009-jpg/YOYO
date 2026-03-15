@@ -13,14 +13,10 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-          cache: gradle
 
-      - name: Download Gradle Wrapper JAR
-        run: |
-          mkdir -p gradle/wrapper
-          curl -o gradle/wrapper/gradle-wrapper.jar \
-            https://github.com/gradle/gradle/raw/v8.2.0/gradle/wrapper/gradle-wrapper.jar
-
+      - name: Fix Gradle Wrapper
+        run: gradle wrapper --gradle-version 8.2
+        
       - name: Grant Gradle Permission
         run: chmod +x gradlew
 
