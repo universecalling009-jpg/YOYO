@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AmitBooks" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#5D4037</item>
+        <item name="colorPrimaryDark">#3E2723</item>
+        <item name="colorAccent">#FF8F00</item>
+        <item name="android:windowBackground">#F5F0E8</item>
+    </style>
+</resources>
